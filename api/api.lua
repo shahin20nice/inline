@@ -218,7 +218,7 @@ local hash = SUDO..'settings:'..chat..':'..value
               spam_status = 'سکوت(کاربر)'
 							redis:set(SUDO..'settings:flood'..chat,'mute')
               elseif redis:get(SUDO..'settings:flood'..chat) == 'mute' then
-              spam_status = '🔓'
+              spam_status = '⭕️آزاد✅'
 							redis:del(SUDO..'settings:flood'..chat)
               end
           else
@@ -1059,9 +1059,9 @@ local function getsettings(value)
         elseif value == 'muteall' then
 				local h = redis:ttl(SUDO..'muteall'..chat)
           if h == -1 then
-        return '🔐'
+        return '🚫قفل❎'
 				elseif h == -2 then
-        return '🔓'
+        return '⭕️آزاد✅'
        else
         return "تا ["..h.."] ثانیه دیگر فعال است"
        end
@@ -1083,12 +1083,12 @@ local function getsettings(value)
               return 'سکوت(کاربر)'
               end
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         elseif is_lock(chat,value) then
-          return '🔐'
+          return '🚫قفل❎'
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         end
               local keyboard = {}
@@ -1154,12 +1154,12 @@ local function getsettings(value)
               return 'سکوت(کاربر)'
               end
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         elseif is_lock(chat,value) then
-          return '🔐'
+          return '🚫قفل❎'
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         end
 							local keyboard = {}
@@ -1216,9 +1216,9 @@ local function getsettings(value)
         elseif value == 'muteall' then
         local h = redis:ttl(SUDO..'muteall'..chat)
        if h == -1 then
-        return '🔐'
+        return '🚫قفل❎'
 				elseif h == -2 then
-			  return '🔓'
+			  return '⭕️آزاد✅'
        else
         return "تا ["..h.."] ثانیه دیگر فعال است"
        end
@@ -1240,12 +1240,12 @@ local function getsettings(value)
               return 'سکوت-کاربر'
               end
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         elseif is_lock(chat,value) then
-          return '🔐'
+          return '🚫قفل❎'
           else
-          return '🔓'
+          return '⭕️آزاد✅'
           end
         end
 									local MSG_MAX = (redis:get(SUDO..'floodmax'..chat) or 5)
