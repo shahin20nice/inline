@@ -1267,7 +1267,7 @@ local function getsettings(value)
                 },{
                   {text=getsettings('tgservice'),callback_data=chat..':lock tgservice'},{text = '🚶‍♀پیام جوین🚶', callback_data = chat..'_tgservice'}
                 },{
-                 {text=getsettings('muteall'),callback_data=chat..':lock muteall'}, {text = '🔥همه چیز💥', callback_data = chat..'_muteall'}
+                 {text=getsettings('muteall'),callback_data=chat..':lock muteall'}, {text = '🔥گروه💥', callback_data = chat..'_muteall'}
                 },{
                  {text=getsettings('welcome'),callback_data=chat..':lock welcome'}, {text = '💞خوشامد💖', callback_data = chat..'_welcome'}
                 },{
@@ -1288,7 +1288,7 @@ local function getsettings(value)
 							}
               edit(q.inline_message_id,'تنظیمات-ابرگروه:',keyboard)
             end
-            else Canswer(q.id,'شما مالک/مدیر گروه نیستید و امکان تغییر تنظیمات را ندارید!\n>برای خرید ربات به کانال زیر مراجعه فرمایید:\n@BanG_TeaM',true)
+            else Canswer(q.id,'شما مالک/مدیر گروه نیستید و امکان تغییر تنظیمات را ندارید!\n>برای خرید ربات به کانال زیر مراجعه فرمایید:\n@Nice20Team',true)
 						end
 						end
           if msg.message and msg.message.date > (os.time() - 5) and msg.message.text then
