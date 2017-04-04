@@ -84,7 +84,9 @@ function Canswer(callback_query_id, text, show_alert)
     https.request(urlk)
   end
 function settings(chat,value) 
-local hash = SUDO..'settings:'..chat..':'..value
+
+	
+	local hash = SUDO..'settings:'..chat..':'..value
   if value == 'file' then
       text = '📂فایل📑'
    elseif value == 'keyboard' then
@@ -100,7 +102,7 @@ local hash = SUDO..'settings:'..chat..':'..value
     elseif value == 'photo' then
     text = '📸عکس📷'
     elseif value == 'gif' then
-    text = 'فیلتر تصاویر متحرک'
+    text = '🎊گیف🎁'
     elseif value == 'video' then
     text = '🎥فیلم📹'
     elseif value == 'audio' then
@@ -122,7 +124,7 @@ local hash = SUDO..'settings:'..chat..':'..value
     elseif value == 'bot' then
     text = '🤖ربات👽'
     elseif value == 'tgservice' then
-    text = '🚶ورودخروج🚶'
+    text = '🚶‍♀پیام جوین🚶'
 	elseif value == 'groupadds' then
     text = '🛍تبلیغات🎁'
     end
@@ -1094,27 +1096,27 @@ local function getsettings(value)
 	            	{
                  {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = '📸عکس📷', callback_data = chat..'_photo'}
                 },{
-                 {text=getsettings('video'),callback_data=chat..':lock video'}, {text = 'فیلتر ویدئو', callback_data = chat..'_video'}
+                 {text=getsettings('video'),callback_data=chat..':lock video'}, {text = '🎥فیلم📹', callback_data = chat..'_video'}
                 },{
-                 {text=getsettings('audio'),callback_data=chat..':lock audio'}, {text = 'فیلتر صدا', callback_data = chat..'_audio'}
+                 {text=getsettings('audio'),callback_data=chat..':lock audio'}, {text = '🎤ویس🎙', callback_data = chat..'_audio'}
                 },{
-                 {text=getsettings('gif'),callback_data=chat..':lock gif'}, {text = 'فیلتر تصاویر متحرک', callback_data = chat..'_gif'}
+                 {text=getsettings('gif'),callback_data=chat..':lock gif'}, {text = '🎊گیف🎁', callback_data = chat..'_gif'}
                 },{
-                 {text=getsettings('music'),callback_data=chat..':lock music'}, {text = 'فیلتر آهنگ', callback_data = chat..'_music'}
+                 {text=getsettings('music'),callback_data=chat..':lock music'}, {text = '🎧آهنگ🎼', callback_data = chat..'_music'}
                 },{
-                  {text=getsettings('file'),callback_data=chat..':lock file'},{text = 'فیلتر فایل', callback_data = chat..'_file'}
+                  {text=getsettings('file'),callback_data=chat..':lock file'},{text = '📂فایل📑', callback_data = chat..'_file'}
                 },{
-                  {text=getsettings('link'),callback_data=chat..':lock link'},{text = 'قفل ارسال لینک', callback_data = chat..'_link'}
+                  {text=getsettings('link'),callback_data=chat..':lock link'},{text = '🖇لینک🔗', callback_data = chat..'_link'}
                 },{
-                 {text=getsettings('sticker'),callback_data=chat..':lock sticker'}, {text = 'فیلتر برچسب', callback_data = chat..'_sticker'}
+                 {text=getsettings('sticker'),callback_data=chat..':lock sticker'}, {text = '🎎استیکر🎭', callback_data = chat..'_sticker'}
                 },{
-                  {text=getsettings('text'),callback_data=chat..':lock text'},{text = 'فیلتر متن', callback_data = chat..'_text'}
+                  {text=getsettings('text'),callback_data=chat..':lock text'},{text = '📄متن📜', callback_data = chat..'_text'}
                 },{
-                  {text=getsettings('pin'),callback_data=chat..':lock pin'},{text = 'قفل پیغام پین شده', callback_data = chat..'_pin'}
+                  {text=getsettings('pin'),callback_data=chat..':lock pin'},{text = '🗜سنجاق📎', callback_data = chat..'_pin'}
                 },{
-                 {text=getsettings('username'),callback_data=chat..':lock username'}, {text = 'فیلتر یوزرنیم', callback_data = chat..'_username'}
+                 {text=getsettings('username'),callback_data=chat..':lock username'}, {text = '🎗تگ🆔', callback_data = chat..'_username'}
                 },{
-                  {text=getsettings('contact'),callback_data=chat..':lock contact'},{text = 'فیلتر مخاطبین', callback_data = chat..'_contact'}
+                  {text=getsettings('contact'),callback_data=chat..':lock contact'},{text = '☎️مخاطب📞', callback_data = chat..'_contact'}
                 },{
                    {text = 'بازگشت به منوی اصلی ◀️', callback_data = 'firstmenu:'..chat},{text = '▶️ صفحه بعدی', callback_data = 'next_page:'..chat}
                 }
@@ -1165,27 +1167,27 @@ local function getsettings(value)
 									{
                  {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = '📸عکس📷', callback_data = chat..'_photo'}
                 },{
-                 {text=getsettings('video'),callback_data=chat..':lock video'}, {text = 'فیلتر ویدئو', callback_data = chat..'_video'}
+                 {text=getsettings('video'),callback_data=chat..':lock video'}, {text = '🎥فیلم📹', callback_data = chat..'_video'}
                 },{
-                 {text=getsettings('audio'),callback_data=chat..':lock audio'}, {text = 'فیلتر صدا', callback_data = chat..'_audio'}
+                 {text=getsettings('audio'),callback_data=chat..':lock audio'}, {text = '🎤ویس🎙', callback_data = chat..'_audio'}
                 },{
-                 {text=getsettings('gif'),callback_data=chat..':lock gif'}, {text = 'فیلتر تصاویر متحرک', callback_data = chat..'_gif'}
+                 {text=getsettings('gif'),callback_data=chat..':lock gif'}, {text = '🎊گیف🎁', callback_data = chat..'_gif'}
                 },{
-                 {text=getsettings('music'),callback_data=chat..':lock music'}, {text = 'فیلتر آهنگ', callback_data = chat..'_music'}
+                 {text=getsettings('music'),callback_data=chat..':lock music'}, {text = '🎧آهنگ🎼', callback_data = chat..'_music'}
                 },{
-                  {text=getsettings('file'),callback_data=chat..':lock file'},{text = 'فیلتر فایل', callback_data = chat..'_file'}
+                  {text=getsettings('file'),callback_data=chat..':lock file'},{text = '📂فایل📑', callback_data = chat..'_file'}
                 },{
-                  {text=getsettings('link'),callback_data=chat..':lock link'},{text = 'قفل ارسال لینک', callback_data = chat..'_link'}
+                  {text=getsettings('link'),callback_data=chat..':lock link'},{text = '🖇لینک🔗', callback_data = chat..'_link'}
                 },{
-                 {text=getsettings('sticker'),callback_data=chat..':lock sticker'}, {text = 'فیلتر برچسب', callback_data = chat..'_sticker'}
+                 {text=getsettings('sticker'),callback_data=chat..':lock sticker'}, {text = '🎎استیکر🎭', callback_data = chat..'_sticker'}
                 },{
-                  {text=getsettings('text'),callback_data=chat..':lock text'},{text = 'فیلتر متن', callback_data = chat..'_text'}
+                  {text=getsettings('text'),callback_data=chat..':lock text'},{text = '📄متن📜', callback_data = chat..'_text'}
                 },{
-                  {text=getsettings('pin'),callback_data=chat..':lock pin'},{text = 'قفل پیغام پین شده', callback_data = chat..'_pin'}
+                  {text=getsettings('pin'),callback_data=chat..':lock pin'},{text = '🗜سنجاق📎', callback_data = chat..'_pin'}
                 },{
-                 {text=getsettings('username'),callback_data=chat..':lock username'}, {text = 'فیلتر یوزرنیم', callback_data = chat..'_username'}
+                 {text=getsettings('username'),callback_data=chat..':lock username'}, {text = '🎗تگ🆔', callback_data = chat..'_username'}
                 },{
-                  {text=getsettings('contact'),callback_data=chat..':lock contact'},{text = 'فیلتر مخاطبین', callback_data = chat..'_contact'}
+                  {text=getsettings('contact'),callback_data=chat..':lock contact'},{text = '☎️مخاطب📞', callback_data = chat..'_contact'}
                 },{
                    {text = 'بازگشت به منوی اصلی ◀️', callback_data = 'firstmenu:'..chat},{text = '▶️ صفحه بعدی', callback_data = 'next_page:'..chat}
                 }
@@ -1251,25 +1253,25 @@ local function getsettings(value)
          		local keyboard = {}
 							keyboard.inline_keyboard = {
 								{
-                  {text=getsettings('forward'),callback_data=chat..':lock forward'},{text = 'فیلتر فوروارد', callback_data = chat..'_forward'}
+                  {text=getsettings('forward'),callback_data=chat..':lock forward'},{text = '📤فوروارد📥', callback_data = chat..'_forward'}
                 },{
-                  {text=getsettings('bot'),callback_data=chat..':lock bot'},{text = 'قفل ورود ربات(API)', callback_data = chat..'_bot'}
+                  {text=getsettings('bot'),callback_data=chat..':lock bot'},{text = '🤖ربات👽', callback_data = chat..'_bot'}
                 },{
-                  {text=getsettings('game'),callback_data=chat..':lock game'},{text = 'فیلتر بازی(inline)', callback_data = chat..'_game'}
+                  {text=getsettings('game'),callback_data=chat..':lock game'},{text = '🎮بازی🏄', callback_data = chat..'_game'}
                 },{
-                  {text=getsettings('persian'),callback_data=chat..':lock persian'},{text = 'فیلتر گفتمان فارسی', callback_data = chat..'_persian'}
+                  {text=getsettings('persian'),callback_data=chat..':lock persian'},{text = '🇮🇷فارسی♒️', callback_data = chat..'_persian'}
                 },{
-                  {text=getsettings('english'),callback_data=chat..':lock english'},{text = 'فیلتر گفتمان انگلیسی', callback_data = chat..'_english'}
+                  {text=getsettings('english'),callback_data=chat..':lock english'},{text = '🆎انگلیسی🇬🇧', callback_data = chat..'_english'}
                 },{
-                  {text=getsettings('keyboard'),callback_data=chat..':lock keyboard'},{text = 'قفل دکمه شیشه ای', callback_data = chat..'_keyboard'}
+                  {text=getsettings('keyboard'),callback_data=chat..':lock keyboard'},{text = '⌨اینلاین🎲', callback_data = chat..'_keyboard'}
                 },{
-                  {text=getsettings('tgservice'),callback_data=chat..':lock tgservice'},{text = 'فیلتر پیغام ورود،خروج', callback_data = chat..'_tgservice'}
+                  {text=getsettings('tgservice'),callback_data=chat..':lock tgservice'},{text = '🚶‍♀پیام جوین🚶', callback_data = chat..'_tgservice'}
                 },{
-                 {text=getsettings('muteall'),callback_data=chat..':lock muteall'}, {text = 'فیلتر تمامی گفتگو ها', callback_data = chat..'_muteall'}
+                 {text=getsettings('muteall'),callback_data=chat..':lock muteall'}, {text = '🔥همه چیز💥', callback_data = chat..'_muteall'}
                 },{
-                 {text=getsettings('welcome'),callback_data=chat..':lock welcome'}, {text = 'پیغام خودش آمدگویی', callback_data = chat..'_welcome'}
+                 {text=getsettings('welcome'),callback_data=chat..':lock welcome'}, {text = '💞خوشامد💖', callback_data = chat..'_welcome'}
                 },{
-                 {text=getsettings('spam'),callback_data=chat..':lock spam'}, {text = 'عملکرد قفل ارسال هرزنامه', callback_data = chat..'_spam'}
+                 {text=getsettings('spam'),callback_data=chat..':lock spam'}, {text = '🚨عملکرد اسپم🚦', callback_data = chat..'_spam'}
                 },{
                  {text = 'حداکثر زمان ارسال هرزنامه: '..tostring(TIME_MAX)..' ثانیه', callback_data = chat..'_TIME_MAX'}
                 },{
