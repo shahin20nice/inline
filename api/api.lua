@@ -173,7 +173,7 @@ local hash = SUDO..'settings:'..chat..':'..value
               local keyboard = {}
 							keyboard.inline_keyboard = {
 								{
-                 {text = 'تنظیمات گروه', callback_data = 'groupsettings:'..chat} --,{text = 'واحد فروش', callback_data = 'aboute:'..chat}
+                 {text = '⚙🛠تنظیمات گروه🛠⚙', callback_data = 'groupsettings:'..chat} --,{text = 'واحد فروش', callback_data = 'aboute:'..chat}
                 },{
 				 {text = 'پشتیبانی', callback_data = 'supportbot:'..chat},{text = 'تبلیغات شما', callback_data = 'youradds:'..chat}
 				  },{
