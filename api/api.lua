@@ -98,7 +98,7 @@ local hash = SUDO..'settings:'..chat..':'..value
    elseif value == 'pin' then
     text = 'قفل پین کردن(پیام)'
     elseif value == 'photo' then
-    text = 'فیلتر تصاویر'
+    text = '🏜فیلتر تصاویر🏜'
     elseif value == 'gif' then
     text = 'فیلتر تصاویر متحرک'
     elseif value == 'video' then
@@ -1092,7 +1092,7 @@ local function getsettings(value)
               local keyboard = {}
             	keyboard.inline_keyboard = {
 	            	{
-                 {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = 'فیلتر تصاویر', callback_data = chat..'_photo'}
+                 {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = '🏜فیلتر تصاویر🏜', callback_data = chat..'_photo'}
                 },{
                  {text=getsettings('video'),callback_data=chat..':lock video'}, {text = 'فیلتر ویدئو', callback_data = chat..'_video'}
                 },{
@@ -1163,7 +1163,7 @@ local function getsettings(value)
 							local keyboard = {}
 							keyboard.inline_keyboard = {
 									{
-                 {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = 'فیلتر تصاویر', callback_data = chat..'_photo'}
+                 {text=getsettings('photo'),callback_data=chat..':lock photo'}, {text = '🏜فیلتر تصاویر🏜', callback_data = chat..'_photo'}
                 },{
                  {text=getsettings('video'),callback_data=chat..':lock video'}, {text = 'فیلتر ویدئو', callback_data = chat..'_video'}
                 },{
